@@ -1,13 +1,28 @@
+
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/v1/:path*", "destination": "/api/v1/:path*" },
-    { "source": "/", "destination": "/api/index" }
+    {
+      "source": "/v1/:path*",
+      "destination": "/api/v1/:path*"
+    },
+    {
+      "source": "/",
+      "destination": "/api/index"
+    }
   ],
   "functions": {
-    "api/v1/chat/completions.js": { "maxDuration": 60, "runtime": "nodejs20.x" },
-    "api/v1/responses.js": { "maxDuration": 60, "runtime": "nodejs20.x" },
-    "api/v1/models.js": { "maxDuration": 30, "runtime": "nodejs20.x" },
-    "api/index.js": { "maxDuration": 10, "runtime": "nodejs20.x" }
+    "api/v1/chat/completions.js": {
+      "maxDuration": 60
+    },
+    "api/v1/responses.js": {
+      "maxDuration": 60
+    },
+    "api/v1/models.js": {
+      "maxDuration": 30
+    },
+    "api/index.js": {
+      "maxDuration": 10
+    }
   }
 }
