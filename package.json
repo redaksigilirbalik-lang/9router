@@ -1,0 +1,14 @@
+{
+  "name": "9router",
+  "version": "1.0.0",
+  "description": "9Router Lite — AI router OpenAI-compatible (chat completions, streaming, fallback multi-provider) untuk deploy di Vercel.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.js",
+    "start": "node scripts/serve.js"
+  }
+}
